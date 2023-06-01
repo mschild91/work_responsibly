@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
 body {
     background-color: #EEEEEE;
     font-family: Roboto;
@@ -59,7 +64,6 @@ header ul a{
 }
 
 header .browse {
-    font-family: Lucida Grande;
     position: absolute;
     top: 577.5px;
     left: 100px;

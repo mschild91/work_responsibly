@@ -12,6 +12,9 @@
 body {
     background-color: #EEEEEE;
     font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 nav a:hover {
@@ -29,29 +32,39 @@ aside img:hover {
 header {
     height: 697.5px;
     border-bottom:  1px solid #CCCCCC;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 header p{
-    position: absolute;
+    /* position: absolute;
     margin-left: 100px;
-    top: 198px;
+    top: 198px; */
     font-size: 50px;
     font-weight: 400;
     line-height: 59px;
 }
 
 .headline{
-    color: #659D89;
-    margin-left: 100px;
-    position: absolute;
-    top: 139.5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+
+.headline p:nth-of-type(1) {
+    color: #659D89;
+}
+
 header ul {
-    position: absolute;
+    display: flex;
 }
 
 nav li{
-    display: inline-block;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
@@ -63,10 +76,7 @@ header ul a{
     text-decoration: none;
 }
 
-header .browse {
-    position: absolute;
-    top: 577.5px;
-    left: 100px;
+.browse {
     color: #666666;
     font-size: 16px;
     line-height: 19px;
@@ -75,11 +85,8 @@ header .browse {
 }
 
 nav {
-    position: absolute;
     width: 1240px;
     height: 19.5px;
-    left: 100px;
-    top: 20px;
 }
 
 nav ul {
@@ -87,10 +94,7 @@ nav ul {
 }
 
 aside {
-    margin-left: 1320px;
     list-style-type: none;
-    position: absolute;
-    top: 423.5px;
 }
 
 aside img {
@@ -106,19 +110,33 @@ main {
     width: 1440px;
 }
 
+main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.struggles {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .struggles p:nth-of-type(1) {
-    margin-left: 100px;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    margin-left: 15%;
+    margin-bottom: 15px;
 }
 .struggles p:nth-of-type(2) {
-    margin-left: 100px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    position: absolute;
-    top: 38.5px;
+    margin-left: 15%;
 }
 
 .struggles .second_section {
@@ -134,9 +152,10 @@ main {
 }
 
 .struggles_first_list {
-    width: 1440px;
+    width: 100%;
     margin-top: 80px;
-    padding-left: 180px;
+    display: flex;
+    justify-content: center;
 }
 
 .struggles_first_list li {
@@ -151,9 +170,10 @@ main {
 }
 
 .struggles_second_list {
-    width: 1440px;
+    width: 100%;
     margin-bottom: 80px;
-    padding-left: 180px;
+    display: flex;
+    justify-content: center;
 }
 
 .struggles_second_list li {

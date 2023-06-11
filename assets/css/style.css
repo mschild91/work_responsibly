@@ -33,12 +33,9 @@ header {
     height: 697.5px;
     border-bottom:  1px solid #CCCCCC;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
+
+
 
 header p{
     /* position: absolute;
@@ -54,6 +51,7 @@ header p{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
+    margin-left: 15%;
 }
 
 .headline p:nth-of-type(1) {
@@ -62,6 +60,11 @@ header p{
 
 header ul {
     display: flex;
+}
+
+nav {
+    margin-left: 15%;
+    margin-bottom: 5%;
 }
 
 nav li{
@@ -76,12 +79,17 @@ header ul a{
     text-decoration: none;
 }
 
+.browsw {
+    margin-top: 10%;
+}
+
 .browse {
     color: #666666;
     font-size: 16px;
     line-height: 19px;
     font-weight: 500;
     text-decoration: none;
+    margin-left: 15%;
 }
 
 nav {
@@ -95,6 +103,7 @@ nav ul {
 
 aside {
     list-style-type: none;
+    margin-left: 95%;
 }
 
 aside img {
